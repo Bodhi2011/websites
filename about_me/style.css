@@ -1,71 +1,76 @@
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Open Sans';
     color: #36454F;
+    box-sizing: border-box;      
 }
 
-nav {
-    width: 100%;
-    position: sticky;
-    margin: 40px auto;
-    z-index: 1;
-    display: flex;
-    justify-content: flex-end;
-}
+@media only screen and (min-width: 1024px) {
+    /* styles for screens larger than 1024px (e.g., desktop devices) */
+    nav {
+        width: 100%;
+        position: sticky;
+        margin: 40px auto;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .nav-links {
+        text-align: right;
+    }
+    
+    .nav-links ul {
+        display: flex;
+    }
+    
+    .nav-links ul li {
+        list-style: none;
+        margin: 0 20px;
+        font-size: 17px;
+    }
+    
+    .nav-links ul li a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 3px solid black;
+        border-radius: 20px;
+        background-color: white;
+        color: #36454F;
+    }
+    
+    .nav-links ul li a:hover {
+        background-color: #36454F;
+        color: white;
+    }
+    
+    
+    img {
+        border: 2px solid black;
+        max-width: 100%;
+        max-height: 70vh;
+        object-fit: contain;
+        height: auto;
+    }
+      
+    .caption {
+        width: 100%;
+        text-align: left;
+        color: #36454F;
+        padding: 10px;
+        font-size: 20px;
+        margin-right: 400px;
+    }
+    
+    .main-body {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: -450px;
+        font-size: 20px;
+        margin-left: 150px;
+    }
+  }
 
-.nav-links {
-    text-align: right;
-}
 
-.nav-links ul {
-    display: flex;
-}
-
-.nav-links ul li {
-    list-style: none;
-    margin: 0 20px;
-    font-size: 17px;
-}
-
-.nav-links ul li a {
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 3px solid black;
-    border-radius: 20px;
-    background-color: white;
-    color: #36454F;
-}
-
-.nav-links ul li a:hover {
-    background-color: #36454F;
-    color: white;
-}
-
-
-img {
-    border: 2px solid black;
-    max-width: 100%;
-    max-height: 70vh;
-    object-fit: contain;
-}
-  
-.caption {
-    width: 100%;
-    text-align: left;
-    color: #36454F;
-    padding: 10px;
-    font-size: 20px;
-    margin-right: 400px;
-}
-
-.main-body {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: -450px;
-    font-size: 20px;
-    margin-left: 150px;
-}
