@@ -3,6 +3,16 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles.css" /> 
+        <script lang="JS">
+          setInterval(displayTime, 1000);
+          
+          function displayTime() {
+            let currTime = new Date();
+            console.log(currTime);
+            document.getElementById("place4time").innerHTML = currTime.toString().split(" ")[4];
+          }
+
+        </script>
     </head>
     <body>
       <div class="row">
@@ -16,6 +26,9 @@
         <div class="col-2 col-s-4" style="text-align: right">
           <a href="https://leetcode.com/ericbodhi">LeetCode</a>
         </div>
+      </div>
+
+      <div class="row">
         <div class="col-4 col-s-12">
           <img src="ericfloyd.jpg" alt="image">
         </div>
@@ -23,7 +36,16 @@
         <div class="col-8 col-s-12">
             <p>My name is Eric Floyd, I'm 13 years old as of January 26, 2023. I have many hobbies like swimming, programming, and hiking. I started programming when I was twelve years old. I currently am learning several languages including HTML, JS, Python3, CSS, and C++. I have solved over two hundred leetcode problems including over 50 medium-level problems. I'm currently working on many  projects from websites to playable game AI.  You can see my past and current projects  in my github/leetcode account in  the top-right corner.</p>
         </div>
+      </div>
 
+      <div class="row">
+        <div class="col-12 col-s-12"> 
+          <span id="place4time"></span>
+
+        </div>
+      </div>
+
+      <div class="row">
         <div class="col-12 col-s-12">
             <div class="footer"> This was last updated as of 2.15.23 (MM/DD/YY)</div>
         </div>
